@@ -1,3 +1,4 @@
+const { maxValue2 } = require("./index");
 t = "aaaaaa";
 t = "abcabcddd";
 

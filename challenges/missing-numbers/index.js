@@ -1,3 +1,4 @@
+module.exports = { missingNumbers };
 function missingNumbers(arr, brr) {
     // Write your code here
     arr.sort((a, b) => a - b);
@@ -17,4 +18,3 @@ function missingNumbers(arr, brr) {
     }
     return brr.filter((b, index) => b > -1 && brr.lastIndexOf(b) == index);
 }
-

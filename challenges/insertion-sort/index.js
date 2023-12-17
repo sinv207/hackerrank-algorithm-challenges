@@ -1,3 +1,4 @@
+module.exports = { insertionSort };
 function insertionSort(arr) {
     // Write your code here
     if (arr.length > 10000) {
@@ -78,10 +79,11 @@ function binarySearch(a, item, low, high) {
 // input07
 4999950000;
 4999950000;
+module.exports = {};
 function insertionSort2(arr) {
     // Write your code here
     let result = mergeSortAndCount(arr, 0, arr.length - 1);
-    console.log("insertionSort", result);
+    // console.log("insertionSort", result);
     return result;
 }
 

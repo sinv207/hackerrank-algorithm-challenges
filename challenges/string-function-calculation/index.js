@@ -19,9 +19,9 @@ function maxValue(t) {
         }
         ++subLen;
     }
-    console.log("maxValue", refs);
+    // console.log("maxValue", refs);
 
-    console.log("maxValue", Object.keys(refs).length);
+    // console.log("maxValue", Object.keys(refs).length);
 
     Object.keys(refs).forEach((s) => (result = result < refs[s] ? refs[s] : result));
 
@@ -175,3 +175,5 @@ function maxValue2(t) {
 }
 
 function buildTree() {}
+
+module.exports = { maxValue2 };

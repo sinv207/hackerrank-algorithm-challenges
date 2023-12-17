@@ -1,3 +1,6 @@
+const { morganAndString } = require("./index");
+const { testArr } = require("./index");
+
 let errIndex = 12;
 
 let a2 =
@@ -38,7 +41,8 @@ function checkOutput() {
     }
     return -1;
 }
-
+let testArr1 = testArr
+;
 console.time("perf");
 testArr1.forEach(({ a, b }) => morganAndString(a, b));
 console.timeEnd("perf");
@@ -52,6 +56,6 @@ i = 0;
 testArr4.forEach(({ a, b }) => console.log(`${i++}`, morganAndString2(a, b)));
 
 // test input10
-let { a, b } = testArr4[4]; // 4
-myOutput = morganAndString2(a, b);
-errIndex = checkOutput();
+// let { a, b } = testArr4[4]; // 4
+// myOutput = morganAndString2(a, b);
+// errIndex = checkOutput();

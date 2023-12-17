@@ -1,6 +1,6 @@
-console.time("perf");
-twoArrays(10, A2, B2);
-console.timeEnd("perf");
+// console.time("perf");
+// twoArrays(10, A2, B2);
+// console.timeEnd("perf");
 
 function stringSimilarity(s) {
     let arr = s.split("");
@@ -30,7 +30,7 @@ function stringSimilarity2(s) {
     return count;
 }
 
-function stringSimilarity5(s) {
+function stringSimilarity4(s) {
     // Write your code here
     let arr = s.split("");
     let i,
@@ -191,3 +191,4 @@ function stringSimilarity5(s) {
     return count;
 }
 
+module.exports = { stringSimilarity5 };

@@ -7,5 +7,10 @@
 
 function findDigits(n) {
     // Write your code here
-    return n.toString().split("").reduce((count, d) => count += (d != 0 && n % d == 0) * 1, 0);
+    return n
+        .toString()
+        .split("")
+        .reduce((count, d) => (count += (d != 0 && n % d == 0) * 1), 0);
 }
+
+module.exports = { findDigits };
